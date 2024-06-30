@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            text-align: center;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .line1 { background-color: #add8e6; }
+        .line2 { background-color: #ffcc99; }
+        .line3 { background-color: #98fb98; }
+        .line4 { background-color: #ffb6c1; }
+        .line5 { background-color: #dda0dd; }
+        .recess, .lunch { background-color: #ffffff; }
+        .home-group { background-color: #ff7f7f; }
+        .tutorial { background-color: #ffff99; }
+        .staff-meeting { background-color: #ffffff; }
+        .enrichment { background-color: #ffff99; }
+        .leadership-meeting { background-color: #ffffff; }
+        .teacher-preparation { background-color: #ffffff; }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>9:00</td>
+                <td class="line1">Line 1</td>
+                <td class="line4">Line 4</td>
+                <td class="line3">Line 3</td>
+                <td class="line5">Line 5</td>
+                <td class="line3">Line 3</td>
+            </tr>
+            <tr>
+                <td>9:30</td>
+                <td class="line1"></td>
+                <td class="line4"></td>
+                <td class="line3"></td>
+                <td class="line5"></td>
+                <td class="line3"></td>
+            </tr>
+            <tr>
+                <td>10:00</td>
+                <td class="recess" colspan="5">Recess</td>
+            </tr>
+            <tr>
+                <td>10:30</td>
+                <td class="line2">Line 2</td>
+                <td class="line5">Line 5</td>
+                <td class="home-group">Home Group</td>
+                <td class="line4">Line 4</td>
+                <td class="line1">Line 1</td>
+            </tr>
+            <tr>
+                <td>11:00</td>
+                <td class="line2"></td>
+                <td class="line5"></td>
+                <td class="home-group"></td>
+                <td class="line4"></td>
+                <td class="line1"></td>
+            </tr>
+            <tr>
+                <td>11:30</td>
+                <td class="line2"></td>
+                <td class="line5"></td>
+                <td class="line2">Line 2</td>
+                <td class="line4"></td>
+                <td class="line1"></td>
+            </tr>
+            <tr>
+                <td>12:00</td>
+                <td class="lunch" colspan="5">Lunch</td>
+            </tr>
+            <tr>
+                <td>1:00</td>
+                <td class="line3">Line 3</td>
+                <td class="line5">Line 5</td>
+                <td class="line1">Line 1</td>
+                <td class="line4">Line 4</td>
+                <td class="line2">Line 2</td>
+            </tr>
+            <tr>
+                <td>1:30</td>
+                <td class="line3"></td>
+                <td class="line5"></td>
+                <td class="line1"></td>
+                <td class="line4"></td>
+                <td class="line2"></td>
+            </tr>
+            <tr>
+                <td>2:00</td>
+                <td class="line3"></td>
+                <td class="line5"></td>
+                <td class="line1"></td>
+                <td class="line4"></td>
+                <td class="line2"></td>
+            </tr>
+            <tr>
+                <td>2:30</td>
+                <td class="tutorial">Tutorial</td>
+                <td class="staff-meeting">Staff Meeting</td>
+                <td class="enrichment">Enrichment</td>
+                <td class="tutorial">Tutorial</td>
+                <td class="teacher-preparation">Teacher Assessment & Preparation</td>
+            </tr>
+            <tr>
+                <td>3:00</td>
+                <td class="teacher-preparation">Teacher Assessment & Preparation</td>
+                <td class="staff-meeting"></td>
+                <td class="enrichment"></td>
+                <td class="leadership-meeting">Leadership Meeting</td>
+                <td class="teacher-preparation"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
