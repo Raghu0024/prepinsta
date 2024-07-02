@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keyword" content="E-commerce">
+    <meta name="author" content="Raghu">
+    <meta name="description" content="Discover the best deals on top-quality products at E-commerce. Shop a wide range of categories including electronics, fashion, home & garden, sports, and toys. Enjoy fast shipping, secure payment options, and excellent customer service. Start shopping now and save big!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .filters {
+            width: 20%;
+            background-color: white;
+            padding: 20px;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        div {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .product-list {
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .product-card {
+            width: 15vw;
+            background-color: white;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+         p {
+            margin: 5px 0;
+            color: #555;
+        }
+       .price {
+            font-size: 20px;
+            color: #b12704;
+            margin: 10px 0;
+        }
+       a{
+            text-decoration: none;
+            color: white;
+            background-color: #ff9900;
+            padding: 10px;
+            border-radius: 5px;
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>E-commerce Website</h1>
+    <div class="container">
+        <div class="filters">
+            <h2>Filters</h2>
+            <div>
+                <label>Category</label>
+                <br>
+                <input type="checkbox" id="electronics" name="category">
+                <label for="electronics">Electronics</label><br>
+                <input type="checkbox" id="clothing" name="category">
+                <label for="clothing">Clothing</label><br>
+                <input type="checkbox" id="home" name="category">
+                <label for="home">Home & Garden</label><br>
+            </div>
+            <hr>
+            <div>
+                <label>Price Range</label>
+                <input type="radio" id="price1" name="price">
+                <label for="price1">₹0 - ₹500</label><br>
+                <input type="radio" id="price2" name="price">
+                <label for="price2">₹500 - ₹10000</label><br>
+                <input type="radio" id="price3" name="price">
+                <label for="price3">₹10000 - ₹20000</label><br>
+                <input type="radio" id="price4" name="price">
+                <label for="price4">₹20000+</label>
+            </div>
+        </div>
+        <div class="product-list">
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/51uNYDqlabL._AC_UL320_.jpg" alt="Product 1">
+                <h3>Surf Excel</h3>
+                <p>Surf Excel Matic Top Load Liquid Detergent 3.2 L Refill, Designed for Tough Stain Removal on Laundry in Washing Machines - Mega Pack (Package may differ)</p>
+                <div class="price">₹425</div>
+                <a href="#">View Details</a>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/61gwPySAwAL._SX522_.jpg" alt="Product 2">
+                <h3>Bournvita</h3>
+                <p>Cadbury Bournvita Chocolate Nutrition Drink, 2 kg</p>
+                <div class="price"> ₹664</div>
+                <a href="#">View Details</a>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/411G1EtoIIL._SX300_SY300_QL70_FMwebp_.jpg" alt="Product 3">
+                <h3>IQOO</h3>
+                <p>iQOO Z9x 5G (Tornado Green, 4GB RAM, 128GB Storage) | Snapdragon 6 Gen 1 with 560K+ AnTuTu Score | 6000 mAh Battery with 7.99mm Slim design | 44W FlashCharge</p>
+                <div class="price">₹12,999</div>
+                <a href="#">View Details</a>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/61G6WfvA9vL._SX466_.jpg" alt="Product 4">
+                <h3>iPad</h3>
+                <p>Apple iPad Pro 11″ (M4): Ultra Retina XDR display, 256GB, Landscape 12MP front camera / 12MP back camera, LiDAR Scanner, Wi-Fi 6E, Face ID, all-day battery life, Standard Glass — Space Black</p>
+                <div class="price">₹97,900</div>
+                <a href="#">View Details</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
