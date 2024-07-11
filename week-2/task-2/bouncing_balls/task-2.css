@@ -1,0 +1,148 @@
+.loader.bouncing-balls {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 80px;
+    height: 40px;
+    margin: auto;
+  }
+  
+  .loader.bouncing-balls .ball {
+    width: 15px;
+    height: 15px;
+    background-color: #3498db;
+    border-radius: 50%;
+    animation: bounce 0.5s infinite alternate;
+  }
+  
+  .loader.bouncing-balls .ball:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  
+  .loader.bouncing-balls .ball:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  
+  @keyframes bounce {
+    to {
+      transform: translateY(-100%);
+    }
+  }
+  
+
+  .loader.spinning-circle {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #3498db;
+    border-top: 4px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s infinite linear;
+    margin: auto;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  
+  .loader.rotating-squares {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .loader.rotating-squares .square {
+    width: 20px;
+    height: 20px;
+    background-color: #3498db;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: rotate 1s infinite linear;
+  }
+  
+  .loader.rotating-squares .square:nth-child(2) {
+    top: auto;
+    bottom: 0;
+    left: auto;
+    right: 0;
+  }
+  
+  .loader.rotating-squares .square:nth-child(3) {
+    top: auto;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .loader.rotating-squares .square:nth-child(4) {
+    top: 0;
+    left: auto;
+    right: 0;
+  }
+  
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  
+  .loader.pulsing-dots {
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+    margin: auto;
+  }
+  
+  .loader.pulsing-dots .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #3498db;
+    border-radius: 50%;
+    animation: pulse 0.5s infinite alternate;
+  }
+  
+  .loader.pulsing-dots .dot:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  
+  .loader.pulsing-dots .dot:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  
+  @keyframes pulse {
+    to {
+      transform: scale(1.5);
+      opacity: 0.5;
+    }
+  }
+
+  
+  .loader.loading-bar {
+    width: 100px;
+    height: 10px;
+    border: 1px solid #3498db;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+  }
+  
+  .loader.loading-bar .bar {
+    width: 100%;
+    height: 100%;
+    background-color: #3498db;
+    animation: loading 1s infinite;
+  }
+  
+  @keyframes loading {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+  
